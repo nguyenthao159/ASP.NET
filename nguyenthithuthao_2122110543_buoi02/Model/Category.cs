@@ -1,11 +1,10 @@
 ﻿namespace nguyenthithuthao_2122110543_buoi02.Model
 {
-    public class Product
+    public class Category
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Image { get; set; }
         public string Description { get; set; }
-        public Double Price { get; set; }
+        public string Image { get; set; }
     }
 }

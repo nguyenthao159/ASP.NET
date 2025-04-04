@@ -11,7 +11,7 @@ using nguyenthithuthao_2122110543_buoi02.Data;
 namespace nguyenthithuthao2122110543buoi02.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250328085052_InitialCreate")]
+    [Migration("20250404062029_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -24,6 +24,31 @@ namespace nguyenthithuthao2122110543buoi02.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("nguyenthithuthao_2122110543_buoi02.Model.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categorys");
+                });
+
             modelBuilder.Entity("nguyenthithuthao_2122110543_buoi02.Model.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -31,6 +56,10 @@ namespace nguyenthithuthao2122110543buoi02.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
                         .IsRequired()
