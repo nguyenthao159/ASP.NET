@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1zk8emCbn3884cIOQcR8tBIBBxHsCZUkcXgEwaFSbdnG4/APRDueEhrTgV1XydIMV7EWvseDWKKeP32498nfsw==",
+  "dgSpecHash": "9kBsIkuJEeFdmdVT2uXKAOGhmOwUaQsM5Xu03jlpqZjt4KGQHxSdswYfxw64SlAelPPTah4bEG0NtQVRetzV+Q==",
   "success": true,
-  "projectFilePath": "D:\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj",
+  "projectFilePath": "D:\\ASP.NET\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj": {}
+    "D:\\ASP.NET\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj": {}
   },
   "projects": {
-    "D:\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj": {
+    "D:\\ASP.NET\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj",
+        "projectUniqueName": "D:\\ASP.NET\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj",
         "projectName": "nguyenthithuthao_2122110543_buoi02",
-        "projectPath": "D:\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj",
+        "projectPath": "D:\\ASP.NET\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02\\obj\\",
+        "outputPath": "D:\\ASP.NET\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
