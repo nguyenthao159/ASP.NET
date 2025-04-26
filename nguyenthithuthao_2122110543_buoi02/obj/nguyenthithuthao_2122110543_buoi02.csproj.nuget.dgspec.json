@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ASP.NET\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj": {}
+    "D:\\ASP.NET\\nguyenthithuthao_2122110543_buoi03\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj": {}
   },
   "projects": {
-    "D:\\ASP.NET\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj": {
+    "D:\\ASP.NET\\nguyenthithuthao_2122110543_buoi03\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ASP.NET\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj",
+        "projectUniqueName": "D:\\ASP.NET\\nguyenthithuthao_2122110543_buoi03\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj",
         "projectName": "nguyenthithuthao_2122110543_buoi02",
-        "projectPath": "D:\\ASP.NET\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj",
+        "projectPath": "D:\\ASP.NET\\nguyenthithuthao_2122110543_buoi03\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\ASP.NET\\nguyenthithuthao_2122110543_buoi02\\nguyenthithuthao_2122110543_buoi02\\obj\\",
+        "outputPath": "D:\\ASP.NET\\nguyenthithuthao_2122110543_buoi03\\nguyenthithuthao_2122110543_buoi02\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.27, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -63,6 +71,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.8.0, )"
             }
           },
           "imports": [

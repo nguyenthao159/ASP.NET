@@ -1,11 +1,24 @@
-﻿namespace nguyenthithuthao_2122110543_buoi02.Model
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace nguyenthithuthao_2122110543_buoi02.Model
 {
     public class Product
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
+
         public string Name { get; set; }
+
         public string Image { get; set; }
+
         public string Description { get; set; }
-        public Double Price { get; set; }
+
+        public double Price { get; set; }
+
+        // Add category
+        public int CategoryId { get; set; }
+
+        [ForeignKey("CategoryId")]
+        public Category? Category { get; set; }
     }
+
 }

@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using nguyenthithuthao_2122110543_buoi02.Data;
 using nguyenthithuthao_2122110543_buoi02.Model;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +11,12 @@ namespace nguyenthithuthao_2122110543_buoi02.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
+        private readonly AppDbContext _context;
+
+        public CategoryController(AppDbContext context)
+        {
+            _context = context;
+        }
         // Dữ liệu mẫu
         private static List<Category> _categories = new List<Category>
         {
@@ -39,11 +47,16 @@ namespace nguyenthithuthao_2122110543_buoi02.Controllers
             if (category == null) return BadRequest(new { message = "Invalid category data" });
             if (string.IsNullOrWhiteSpace(category.Name)) return BadRequest(new { message = "Category name is required" });
 
-            category.Id = _categories.Max(c => c.Id) + 1; // Tự động tăng ID
-            _categories.Add(category);
+            // Bổ sung mặc định nếu không truyền từ frontend
+            category.Description ??= "";
+            category.Image ??= "default.jpg";
 
+            category.Id = _categories.Max(c => c.Id) + 1;
+            _categories.Add(category);
+            _context.SaveChanges();
             return CreatedAtAction(nameof(GetCategory), new { id = category.Id }, category);
         }
+
 
         // PUT api/category/5 - Cập nhật category theo Id
         [HttpPut("{id}")]
@@ -57,7 +70,7 @@ namespace nguyenthithuthao_2122110543_buoi02.Controllers
             category.Name = updatedCategory.Name;
             category.Description = updatedCategory.Description;
             category.Image = updatedCategory.Image;
-
+            _context.SaveChanges();
             return NoContent();
         }
 
@@ -69,8 +82,11 @@ namespace nguyenthithuthao_2122110543_buoi02.Controllers
             if (category == null) return NotFound(new { message = "Category not found" });
 
             _categories.Remove(category);
+            _context.SaveChanges();
             return NoContent();
         }
+        
+
     }
 
 }
