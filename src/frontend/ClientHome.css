@@ -1,0 +1,125 @@
+.client-home {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #f99cbd;
+}
+
+.category-filter {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.category-filter label {
+  font-weight: bold;
+  color: #333;
+}
+
+.category-filter select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  min-width: 150px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  color: #e6a0b8;
+}
+
+.product-image-wrapper {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  
+}
+
+.productimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 0;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+ 
+  
+}
+
+.product-card:hover .productimage {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.product-info {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.product-info h3 {
+  font-size: 1.3em;
+  margin: 0 0 12px;
+  font-weight: 600;
+  color: #222;
+}
+
+.product-info p {
+  margin: 6px 0;
+  font-size: 1em;
+  color: #555;
+  line-height: 1.5;
+  max-height: 3.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price {
+  margin-top: 10px;
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #d6336c;
+}
+.product-card:hover .price {
+  transform: scale(1.05);
+  color: #e6a0b8;
+}
+.home-title{
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #e6a0b8;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+

@@ -1,0 +1,104 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fef6f9;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #fcd6e2;
+  color: #6b3e4b;
+  padding: 20px;
+  border-right: 1px solid #f3c6d0;
+}
+
+.sidebar-header h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #b03a63;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin: 15px 0;
+}
+
+.sidebar-menu a,
+.logout-button {
+  display: flex;
+  align-items: center;
+  color: #6b3e4b;
+  text-decoration: none;
+  font-weight: 500;
+  background: none;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-menu a:hover,
+.logout-button:hover {
+  background-color: #fbeaf0;
+}
+
+.menu-icon {
+  margin-right: 10px;
+}
+
+.logout-button {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #fcd6e2;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f3c6d0;
+}
+
+.header h2 {
+  margin: 0;
+  color: #b03a63;
+}
+
+
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  border: 2px solid #f3c6d0;
+  margin-right: -100px;
+}
+.logo-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.content {
+  padding: 30px;
+}

@@ -1,0 +1,65 @@
+/* Tổng thể Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 12px 24px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo img {
+  height: 190px;
+  object-fit: contain;
+  margin-left: 50px;
+  margin-bottom: -50px;
+  margin-top: -50px;
+}
+.user-section {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.nav .dropdown-menu {
+  margin-top: 8px;
+  min-width: 160px;
+}
+
+
+/* Thanh điều hướng */
+.nav {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+/* Nút điều hướng (Link & Button) */
+.nav-button {
+  color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover cho nút */
+.nav-button:hover {
+  background-color: hwb(319 66% 7%);
+  transform: translateY(-1px);
+}
+
+/* Khi là button thật sự (logout) */
+.nav button.nav-button {
+  background: none;
+  border: none;
+  font: inherit;
+}
